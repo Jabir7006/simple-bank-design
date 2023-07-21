@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Project</title>
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Css Link -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-body">
+        <h1 class="text-center pb-5">Welcome Jabir Bank</h1>
+
+        <form class="fstyle">
+          <h6>Login</h6>
+          <input id="email" class="form-control" type="email" placeholder="email" required/>
+          <input id="password" class="form-control" type="password" placeholder="password" required/>
+          <button class="btn btn-success">Enter</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="bank container">
+      <div class="row">
+        <div class="col-md-3 deposit">
+          <h6>Deposit</h6>
+          <h3>$ <span id="depoMoney">00</span></h3>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 withdraw">
+          <h6>Withdraw</h6>
+          <h3 id="withdMoney">$ 00</h3>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 balance">
+          <h6>Balance</h6>
+          <h3>$ <span id = "depositMoney">1000</span></h3>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+        <div class="account">
+          <div class="row">
+            <div class="col-md-6">
+               
+                    <div class="fstyled">
+                        <h6 class="text-dark">Deposit</h6>
+                  <input class="form-control" type="text" placeholder="$ amount you want to deposit" id="depo"/>
+                  <button id="depositBtn" class="btn btn-success">Deposit</button>
+                    </div>
+                  
+            </div>
+            <div class="col-md-6">
+                
+                  <div class="fstyled">
+                    <h6 class="text-dark">Withdraw</h6>
+                    <input class="form-control" type="text" placeholder="$ amount you want to Withdraw" id="withd"/>
+                    <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+                  </div>
+                  
+            </div>
+          </div>
+
+          
+        
+        </div>
+       
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
